@@ -25,6 +25,7 @@ def main():
                pygame.quit()
                sys.exit()
 
+    
        screen.fill(WHITE)
        width, height = screen.get_size()
        draw_text('Добро пожаловать!', font, screen, 20, 20)
