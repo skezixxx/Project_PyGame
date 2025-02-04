@@ -140,7 +140,7 @@ def apply_bonus(balls, platform_multiplier):
     if bonus_type == 'extra_balls':
         balls.append((WIDTH // 2, HEIGHT // 2, 5 * WIDTH / 800, -5 * HEIGHT / 600))
         balls.append((WIDTH // 2, HEIGHT // 2, -5 * WIDTH / 800, -5 * HEIGHT / 600))
-        bonus_text = small_font.render('Бонус: Удвоение шаров', True, WHITE)
+        bonus_text = small_font.render('Бонус: +2 шара', True, WHITE)
     elif bonus_type == 'speed_up':
         for i in range(len(balls)):
             balls[i] = (balls[i][0], balls[i][1], balls[i][2] * 1.2, balls[i][3] * 1.2)
